@@ -48,7 +48,8 @@ hr{
 
 .page[size="A4"] {
     width: 26cm;
-    height: 29.7cm;
+    height: 35.7cm;
+    align-items: center;
 }
 
 .bb {
@@ -67,7 +68,9 @@ hr{
 .top-left p {
     margin: 0;
 }
-
+.column right{
+  display: inline;
+}
 .top-left .graphic-path {
     height: 40px;
     position: relative;
@@ -88,28 +91,14 @@ hr{
 }
 @import "bourbon@5.*";
 
- /* Breakpoints
-$bp-maggie: 15em; 
-$bp-lisa: 30em;
-$bp-bart: 48em;
-$bp-marge: 62em;
-$bp-homer: 75em;
-
- Styles
-html {
-  box-sizing: border-box;
-} */
-
+ 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
 
-body {
-  font-family: $font-stack-system;
-  /* color: rgba(0,0,0,.87); */
-}
+
 
 a {
   color: rgba(38,137,13,1);
@@ -136,7 +125,7 @@ a {
 .responsive-table {
   width: 100%;
   margin-bottom: 1.5em;
-  border-spacing: 0;
+  /* border-spacing: 30px; */
   
   @media (min-width: $bp-bart) {
     font-size: .9em; 
@@ -374,9 +363,9 @@ img{
   padding-right: 0px;
 }
 
-/* {
+ /* {
   box-sizing: border-box;
-} */
+}  */
 /* Set additional styling options for the columns*/
 .column {
 float: left;
@@ -386,14 +375,13 @@ width: 50%;
 .row:after {
 content: "";
 display: table;
-clear: both;
-}
+ }
 
 .background-page{
   background-color: rgb(231, 231, 240);
   background-size:100%;
 
-  /* overflow: scroll; */
+ 
 
 }
 h1{
@@ -421,6 +409,5 @@ h1{
   .row:after {
   content: "";
   display: table;
-  clear: both;
+  /* clear: both; */
   }
-  </style>
